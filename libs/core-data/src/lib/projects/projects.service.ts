@@ -32,7 +32,7 @@ export class ProjectsService {
   delete(project: Project): Observable<Project> {
     return this.httpClient.delete<Project>(this.getUrlWithId(project.id));
   }
-  
+
   private getUrl() {
     return `${BASE_URL}/${MODEL}`;
   }
