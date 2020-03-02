@@ -8,6 +8,9 @@ import { Projects } from '@angular/cli/lib/config/schema';
 })
 export class ProjectsListComponent implements OnInit {
   @Input() projects: Projects[]
+  @Output() selected = new EventEmitter();
+  @Output() deleted = new EventEmitter();
+
 
   constructor() { }
 
